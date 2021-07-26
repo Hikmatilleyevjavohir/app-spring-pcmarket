@@ -21,7 +21,7 @@ public class Product {
 
     private Double price;
 
-    @OneToOne
+    @ManyToOne
     private Category category;
 
     @OneToOne

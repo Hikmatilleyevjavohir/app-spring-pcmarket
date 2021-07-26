@@ -2,6 +2,7 @@ package uz.pdp.appspringpcmarket.projection;
 
 import org.springframework.data.rest.core.config.Projection;
 import uz.pdp.appspringpcmarket.entity.Basket;
+import uz.pdp.appspringpcmarket.entity.BasketProduct;
 import uz.pdp.appspringpcmarket.entity.Order;
 import uz.pdp.appspringpcmarket.entity.User;
 
@@ -13,7 +14,7 @@ public interface CustomOrder {
 
     Timestamp getOrderDate();
 
-    Basket getBasket();
+    BasketProduct getBasketProduct();
 
     User getUser();
 }

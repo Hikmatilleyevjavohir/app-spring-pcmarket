@@ -5,21 +5,22 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Category {
+public class BasketProduct {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String name;
-
-    private String discription;
+    @ManyToOne
+    private Basket basket;
 
     @ManyToOne
-    private Category parentCategory;
+    private Product product;
+
+    private Double amount;
+
 }

@@ -17,6 +17,7 @@ public class Property {
 
     private String name;
 
-    private String text;
+    @ManyToOne
+    private Character character;
 
 }

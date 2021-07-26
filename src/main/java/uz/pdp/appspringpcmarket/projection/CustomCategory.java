@@ -16,6 +16,4 @@ public interface CustomCategory {
     String getDiscription();
 
     Category getParentCategory();
-
-    List<Product> getProductList();
 }

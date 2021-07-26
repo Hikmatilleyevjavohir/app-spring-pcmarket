@@ -2,13 +2,11 @@ package uz.pdp.appspringpcmarket.projection;
 
 import org.springframework.data.rest.core.config.Projection;
 import uz.pdp.appspringpcmarket.entity.Character;
-import uz.pdp.appspringpcmarket.entity.Property;
 
-@Projection(types = Property.class)
-public interface CustomProperty {
+@Projection(types = Character.class)
+public interface CustomCharacter {
+
     Integer getId();
 
     String getName();
-
-    Character getCharacter();
 }

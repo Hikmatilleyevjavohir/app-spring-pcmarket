@@ -19,11 +19,4 @@ public class Basket {
     private Double price;
 
     private String total;
-
-    private String quantity;
-
-    private Double orderAllPrice;
-
-    @OneToMany
-    private List<Product> productList;
 }
