@@ -15,11 +15,9 @@ import java.util.List;
 @RepositoryRestResource(path = "product", excerptProjection = CustomProduct.class)
 public interface ProductRepository extends JpaRepository<Product, Integer> {
     @Query(nativeQuery = true, value =
-            "select * from product prod " +
-                    "join property prop on prop.id=prod.property_id " +
-                    "join characteristic ch on ch.id=prop.characteristic_id " +
-                    "where prop.id:=propertyId")
-    List<Product> getAllProductByFilter(Integer propertyId);
+            "select * from property prop " +
+                    "where prop.id in (brendId, operativXotiraId, protsessId, EkranDiagonalId, SSDId, videoKardId, qattiqDiskId)")
+    List<Product> getAllProductByFilter(Integer brendId, Integer operativXotiraId, Integer protsessId, Integer EkranDiagonalId, Integer SSDId, Integer videoKardId, Integer qattiqDiskId);
 
     @RestResource(path = "byName")
     Page<Product> findAllByName(@Param("name") String firstName, Pageable pageable);

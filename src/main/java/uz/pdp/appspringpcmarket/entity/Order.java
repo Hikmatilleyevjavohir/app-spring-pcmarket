@@ -20,7 +20,7 @@ public class Order {
     private Timestamp orderDate;
 
     @ManyToOne
-    private BasketProduct basketProduct;
+    private Basket basket;
 
     @ManyToOne
     private User user;

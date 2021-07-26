@@ -26,7 +26,4 @@ public class Product {
 
     @OneToOne
     private Attachment photo;
-
-    @OneToOne
-    private Property property;
 }

@@ -17,6 +17,4 @@ public class Basket {
     private Integer id;
 
     private Double price;
-
-    private String total;
 }

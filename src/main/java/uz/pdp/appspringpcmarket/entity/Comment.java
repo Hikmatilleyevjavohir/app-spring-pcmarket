@@ -19,5 +19,8 @@ public class Comment {
     private String message;
 
     @ManyToOne
+    private Product product;
+
+    @ManyToOne
     private User user;
 }

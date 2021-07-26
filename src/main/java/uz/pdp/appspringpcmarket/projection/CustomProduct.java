@@ -17,6 +17,4 @@ public interface CustomProduct {
     Double getPrice();
 
     Attachment getPhoto();
-
-    Property getProperty();
 }
